@@ -15,5 +15,8 @@ function FindProxyForURL(url, host)
   if (shExpMatch(url, "*.rutracker.org")) {
     return "SOCKS 127.0.0.1:9050; DIRECT";
   }
+  if (shExpMatch(url, "*.linkedin.com")) {
+    return "SOCKS 127.0.0.1:9050; DIRECT";
+  }
   return "DIRECT";
 }
